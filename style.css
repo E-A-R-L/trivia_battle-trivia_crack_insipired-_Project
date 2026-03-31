@@ -144,3 +144,20 @@ h3 {
 #spin {
     margin-top: 50px;
 }
+
+
+#top {
+    margin-top: 20px;
+    font-size: 60px;
+}
+
+#leaderboard {
+    border-style: solid;
+    width: 300px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(250, 249, 249);
+    margin-left: auto;
+    margin-right: auto;
+}
