@@ -20,7 +20,7 @@
 <div id="options">
 <button id="searchbtn">SEARCH</button>
 <button id="continuebtn">CONTINUE</button>
-<button id="challengebtn">CHALLENGE</button>
+<button id="challengebtn">CHALLENGES</button>
 </div>
 
 </body>
