@@ -75,77 +75,6 @@ h3 {
     width:300px;
 }
 
-.container {
-    width: 500px;
-    height: 500px;
-    background-color: #ccc;
-    border-radius: 50%;
-    border: 15px solid #dde;
-    position: relative;
-    overflow: hidden;
-    transition: 5s;
-    margin-right: auto;
-    margin-left: auto;
-    transition: 4s ease-out;
-}
-
-.container div {
-    height: 50%;
-    width: 100%;
-    position: absolute;
-    clip-path: polygon(150% 0, 50% 100%, -50% 0);
-    transform-origin: bottom;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: sans-serif;
-    color: #fff;
-    left: 50%;
-
-}
-
-#wheel-wrapper {
-    position: relative;
-    width: 500px;
-    margin: auto;
-}
-
-.arrow {
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 40px solid rgb(103, 131, 255);
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-}
-
-.container .anml {
-    background-color: #ff0505;
-    transform: translateX(-50%) rotate(0deg);
-}
-
-.container .scnc {
-    background-color: #20f704;
-    transform: translateX(-50%) rotate(120deg);
-}
-
-.container .geo {
-    background-color: #eeea08;
-    transform: translateX(-50%) rotate(240deg);
-}
-
-#spin {
-    margin-top: 50px;
-}
-
-
 #top {
     margin-top: 20px;
     font-size: 60px;
@@ -161,3 +90,33 @@ h3 {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+#a1 {
+    height: 200px;
+    width: 300px;
+    margin: 5px;
+    padding: 0;
+    background-color: red;
+}
+#a2 {
+    height: 200px;
+    width: 300px;
+    margin: 5px;
+    padding: 0;
+    background-color: rgb(101, 230, 62);
+}
+#a3 {
+    height: 200px;
+    width: 300px;
+    margin: 5px;
+    padding: 0;
+    background-color: rgb(48, 51, 240);
+}
+#a4 {
+    height: 200px;
+    width: 300px;
+    margin: 5px;
+    padding: 0;
+    background-color: rgb(228, 231, 46);
+} 

@@ -1,3 +1,12 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    header('Location: ../index.php');
+    exit;
+}
+
+$username = $_SESSION['username'];
+?>
 <!DOCTYPE html>
 <head>
 <link rel="stylesheet" href="../style.css">
@@ -6,7 +15,7 @@
 <body>
 <div id="title">Trivia Battle</div>
 <br><br>
-<div id="welcome">Welcome $name ready to test your trivia?</div>
+<div id="welcome">Welcome <?php echo $username; ?> ready to test your trivia?</div>
 <br><br>
 
 <div id="menu-options">
@@ -16,11 +25,12 @@
 </div>
 <br>
 
-
 <div id="options">
-<button id="searchbtn">SEARCH</button>
-<button id="continuebtn">CONTINUE</button>
-<button id="challengebtn">CHALLENGES</button>
+    <form method="POST" action="../controller.php">
+        <button type="submit" name="search" id="searchbtn">SEARCH</button>
+    </form>
+    <button id="continuebtn">CONTINUE</button>
+    <button id="challengebtn">CHALLENGES</button>
 </div>
 
 </body>
