@@ -75,6 +75,12 @@ h3 {
     width:300px;
 }
 
+#signout {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
 #top {
     margin-top: 20px;
     font-size: 60px;
@@ -91,32 +97,65 @@ h3 {
     margin-right: auto;
 }
 
+#answers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
 
 #a1 {
     height: 200px;
     width: 300px;
-    margin: 5px;
+    margin: 0;
     padding: 0;
+    cursor: pointer;
     background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #a2 {
     height: 200px;
     width: 300px;
-    margin: 5px;
+    margin: 0;
     padding: 0;
+    cursor: pointer;
     background-color: rgb(101, 230, 62);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #a3 {
     height: 200px;
     width: 300px;
-    margin: 5px;
+    margin: 0;
     padding: 0;
+    cursor: pointer;
     background-color: rgb(48, 51, 240);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #a4 {
     height: 200px;
     width: 300px;
-    margin: 5px;
+    margin: 0;
     padding: 0;
+    cursor: pointer;
     background-color: rgb(228, 231, 46);
-} 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#result-box {
+    border-style: solid;
+    width: 300px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(250, 249, 249);
+    margin-left: auto;
+    margin-right: auto;
+}
