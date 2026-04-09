@@ -21,9 +21,9 @@ $username   = $_SESSION['username'];
 <br><br>
 
 <div id="menu-options">
-<button>Profile</button>
+<a href="profile.php"><button>Profile</button></a>
 <br>
-<button>Leaderboard</button>
+<a href="leaderboard.php"><button>Leaderboard</button></a>
 </div>
 <br>
 

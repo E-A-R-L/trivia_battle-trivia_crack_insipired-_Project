@@ -79,4 +79,15 @@ if (isset($_POST['continue'])) {
     $_SESSION['correct']  = $question['correct_option'];
     header('Location: views/ongoing.php');
 }
+
+if (isset($_POST['update'])) {
+    $new_username = $_POST['new_username'];
+    $new_password = $_POST['new_password'];
+    $retype       = $_POST['retype_password'];
+    if ($new_password === $retype) {
+        mysqli_query($conn, "UPDATE users SET username = '$new_username', password = '$new_password' WHERE id = {$_SESSION['user_id']}");
+        $_SESSION['username'] = $new_username;
+    }
+    header('Location: views/profile.php');
+}
 ?>
